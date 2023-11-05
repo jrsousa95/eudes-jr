@@ -1,10 +1,12 @@
-import { Box } from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 
 interface SocialNetworksProps {
   children: React.ReactNode;
 }
 
-export function SocialNetworks({ children }: SocialNetworksProps) {
+export function SocialNetworksBox({ children }: SocialNetworksProps) {
+  const bg = useColorModeValue("#F2F7FC", "#1A202C");
+
   return (
     <Box
       display="flex"
@@ -13,7 +15,7 @@ export function SocialNetworks({ children }: SocialNetworksProps) {
       alignItems="center"
       gap="8.269px"
       borderRadius="8.269px"
-      background="#F2F7FC"
+      background={bg}
     >
       {children}
     </Box>

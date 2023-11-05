@@ -1,19 +1,27 @@
-import { Box, Button, Heading, Stack, useColorMode } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Heading,
+  Stack,
+  useColorMode,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { Profile } from "./components/profile";
 import { colorModeIcon } from "./utils/colorModeIcon";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
+  const bg = useColorModeValue("#F2F7FC", "#1A202C");
 
   return (
-    <Box margin="50px 100px">
+    <Box padding="50px 100px" width="full" height="full" bg={bg}>
       <Stack
         direction="row"
         justifyContent="space-between"
         alignItems="center"
         marginBottom="42px"
       >
-        <Heading fontSize="24px" fontWeight="400">
+        <Heading fontSize="32px" fontFamily="Brush Script MT" fontWeight="400">
           Eudes Junior
         </Heading>
         <Button onClick={toggleColorMode}>{colorModeIcon(colorMode)}</Button>
