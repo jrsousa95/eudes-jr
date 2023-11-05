@@ -6,6 +6,7 @@ interface SocialNetworksProps {
 
 export function SocialNetworksBox({ children }: SocialNetworksProps) {
   const bg = useColorModeValue("#F2F7FC", "#1A202C");
+  const hoverBg = useColorModeValue("#DCE8FF", "#718096");
 
   return (
     <Box
@@ -13,9 +14,10 @@ export function SocialNetworksBox({ children }: SocialNetworksProps) {
       padding="20.671px 24.806px"
       justifyContent="center"
       alignItems="center"
-      gap="8.269px"
       borderRadius="8.269px"
       background={bg}
+      transition="background 0.3s ease-in-out"
+      _hover={{ background: hoverBg }}
     >
       {children}
     </Box>

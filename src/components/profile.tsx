@@ -24,7 +24,6 @@ export function Profile() {
       <Image
         boxSize="200px"
         borderRadius="20px"
-        background="url(<path-to-image>), lightgray 50% / cover no-repeat"
         boxShadow="0px 0px 4px 0px rgba(0, 0, 0, 0.25)"
         flexShrink="0"
         objectFit="cover"
@@ -45,7 +44,7 @@ export function Profile() {
         padding="20px"
         gap="22px"
       >
-        <Stack alignItems="center" spacing={1} marginTop="20px">
+        <Stack alignItems="center" spacing={1} paddingTop="100px">
           <Heading
             fontFamily="Raleway"
             fontSize="28.42px"
@@ -65,22 +64,22 @@ export function Profile() {
           </Text>
         </Stack>
 
-        <Stack direction="row" spacing="10px">
-          <SocialNetworksBox>
-            <Link href="https://www.instagram.com/eudesjr.dev/" target="_blank">
-              <BsInstagram />
-            </Link>
-          </SocialNetworksBox>
-          <SocialNetworksBox>
-            <Link href="https://www.linkedin.com/in/eudes-jr/" target="_blank">
-              <BsLinkedin />
-            </Link>
-          </SocialNetworksBox>
-          <SocialNetworksBox>
-            <Link href="https://github.com/jrsousa95" target="_blank">
-              <BsGithub />
-            </Link>
-          </SocialNetworksBox>
+        <Stack direction="row">
+          <Link href="https://www.instagram.com/eudesjr.dev/" target="_blank">
+            <SocialNetworksBox>
+              <BsInstagram fontSize="20px" color="#BC2A8D" />
+            </SocialNetworksBox>
+          </Link>
+          <Link href="https://www.linkedin.com/in/eudes-jr/" target="_blank">
+            <SocialNetworksBox>
+              <BsLinkedin fontSize="20px" color=" #0077B5" />
+            </SocialNetworksBox>
+          </Link>
+          <Link href="https://github.com/jrsousa95" target="_blank">
+            <SocialNetworksBox>
+              <BsGithub fontSize="20px" />
+            </SocialNetworksBox>
+          </Link>
         </Stack>
 
         <Box
@@ -91,14 +90,14 @@ export function Profile() {
           background={bg}
           paddingBottom="30px"
         >
-          <Infos label="Phone" value="+ 55 (85) 98672-0093">
-            <BsPhone fontSize="14px" />
+          <Infos label="Phone" value="+55 (85) 98672-0093">
+            <BsPhone fontSize="20px" color="#00A3C4" />
           </Infos>
           <Infos label="Email" value="juniorsousa_343@hotmail.com">
-            <AiOutlineMail fontSize="14px" />
+            <AiOutlineMail fontSize="20px" color="#00A3C4" />
           </Infos>
           <Infos label="Location" value="Caucaia, CE - Brazil">
-            <TbLocation fontSize="14px" />
+            <TbLocation fontSize="20px" color="#00A3C4" />
           </Infos>
 
           <Box
@@ -107,10 +106,19 @@ export function Profile() {
             justifyContent="center"
             marginTop="30px"
           >
-            <Button size="sm" variant="outline" colorScheme="primary">
+            <Button
+              width="full"
+              marginX="46px"
+              variant="outline"
+              bgGradient="linear(to-r, cyan.300, cyan.600)"
+              transition="background 0.3s ease-in-out"
+              _hover={{
+                bgGradient: "linear(to-r, cyan.600, cyan.800)",
+              }}
+            >
               <Stack direction="row" alignItems="center">
-                <FiDownload />
-                <Text>Download Resume</Text>
+                <FiDownload color="#1A202C" />
+                <Text color="#1A202C">Download Resume</Text>
               </Stack>
             </Button>
           </Box>

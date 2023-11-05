@@ -14,12 +14,12 @@ function App() {
   const bg = useColorModeValue("#F2F7FC", "#1A202C");
 
   return (
-    <Box padding="50px 100px" width="full" height="full" bg={bg}>
+    <Box padding="50px 100px" width="full" bg={bg}>
       <Stack
         direction="row"
         justifyContent="space-between"
         alignItems="center"
-        marginBottom="42px"
+        marginBottom="15px"
       >
         <Heading fontSize="32px" fontFamily="Brush Script MT" fontWeight="400">
           Eudes Junior
