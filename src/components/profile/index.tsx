@@ -13,8 +13,8 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsGithub, BsInstagram, BsLinkedin, BsPhone } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
 import { TbLocation } from "react-icons/tb";
-import { Infos } from "../utils/infos";
-import { SocialNetworksBox } from "../utils/socialNetworks";
+import { Infos } from "../../utils/infos";
+import { SocialNetworksBox } from "../../utils/socialNetworks";
 
 export function Profile() {
   const bg = useColorModeValue("#F2F7FC", "#1A202C");
