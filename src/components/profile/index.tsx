@@ -110,7 +110,7 @@ export function Profile() {
               width="full"
               marginX="46px"
               variant="outline"
-              bgGradient="linear(to-r, cyan.300, cyan.600)"
+              bgGradient="linear(to-r, cyan.400, cyan.500)"
               transition="background 0.3s ease-in-out"
               _hover={{
                 bgGradient: "linear(to-r, cyan.600, cyan.800)",
